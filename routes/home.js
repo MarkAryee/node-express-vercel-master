@@ -1,6 +1,8 @@
 const express = require("express");
 const router = express.Router();
 
+let fs = require('fs');
+
 router.get("/", async (req, res, next) => {
   //res.sendFile(path.join(__dirname,'/index.html'))
 
@@ -10,6 +12,19 @@ router.get("/", async (req, res, next) => {
     //message: "The app is working properly!",
     
   //});
+
+    fs.readFile('./index.html', null, function (error, data) {
+        if (error) {
+            res.writeHead(404);
+            res.write('Whoops! File not found!');
+        } else {
+            res.write(data);
+        }
+        res.end();
+    });
 });
+
+;
+};
 
 module.exports = router;
