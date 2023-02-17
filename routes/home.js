@@ -30,7 +30,7 @@ router.get("/", async (req, res, next) => {
  // });
 });
 
-///*
+/*
     var S_name;
     var S_id;
 router.post('/add-Post', (req, res) => {
@@ -51,7 +51,7 @@ router.post('/add-Post', (req, res) => {
     })
     
 });
-//*/
+*/
 
 
 module.exports = router;
