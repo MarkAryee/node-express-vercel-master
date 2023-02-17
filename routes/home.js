@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 
 router.get("/", async (req, res, next) => {
-  res.sendFile(path.join(__dirname,'/router/index.html'))
+  res.sendFile(path.join(__dirname,'/index.html'))
 
 
    //return res.status(200).json({
