@@ -36,17 +36,18 @@ router.post('/add-Post', (req, res) => {
     S_name = req.body.Name;
     S_id = req.body.ST_ID;
 
- /* const User = new user({
-    name: S_name,
-    id: S_id
-  });
+    /* 
+    const User = new user({
+        name: S_name,
+        id: S_id
+    });
 
-  User.save().then((result) => {
-    res.send(result)
-  }).catch((err) => {
-    console.log(err);
-  })
-*/
+    User.save().then((result) => {
+        res.send(result)
+    }).catch((err) => {
+        console.log(err);
+    })
+    */
 });
 */
 
