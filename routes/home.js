@@ -36,7 +36,7 @@ router.post('/add-Post', (req, res) => {
     S_name = req.body.Name;
     S_id = req.body.ST_ID;
 
-    /* 
+    
     const User = new user({
         name: S_name,
         id: S_id
@@ -47,7 +47,7 @@ router.post('/add-Post', (req, res) => {
     }).catch((err) => {
         console.log(err);
     })
-    */
+    
 });
 */
 
