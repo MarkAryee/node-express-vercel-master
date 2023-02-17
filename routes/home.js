@@ -11,7 +11,7 @@ mongoose.connect(doURI, {useNewUrlParser: true, useUnifiedTopology: true}).then(
 }).catch((err) => {})
 //*/
 
-router.get("/", async (req, res, next) => {
+router.get("/add-Get", async (req, res, next) => {
   res.sendFile(path.join(__dirname,'../routes/index.html'))
 
 
@@ -27,7 +27,7 @@ router.get("/", async (req, res, next) => {
  // });
 });
 
-/*
+///*
     var S_name;
     var S_id;
 router.post('/add-Post', (req, res) => {
@@ -48,7 +48,7 @@ router.post('/add-Post', (req, res) => {
     })
     
 });
-*/
+//*/
 
 
 module.exports = router;
