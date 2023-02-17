@@ -1,7 +1,7 @@
 
-/*
-const mongoose = require('mongoose')
-const Schema = mongoose.Schema
+///*
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
 const userSchema = new Schema({
     name: {
@@ -16,4 +16,4 @@ const userSchema = new Schema({
 
 const user =  mongoose.model('User', userSchema);
 module.exports = user;
-*/
+//*/
