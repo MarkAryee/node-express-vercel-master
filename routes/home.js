@@ -14,16 +14,9 @@ router.get("/", async (req, res, next) => {
   //});
 
     fs.readFile('./index.html', null, function (error, data) {
-        if (error) {
-            res.writeHead(404);
-            res.write('Whoops! File not found!');
-        } else {
-            res.write(data);
-        }
+        res.write(data);
         res.end();
     });
 });
-
-};
 
 module.exports = router;
