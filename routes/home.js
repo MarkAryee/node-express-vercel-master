@@ -4,15 +4,12 @@ const user = require('/routes/User');
 const path = require('path');
 const mongoose = require('mongoose');
 
-///*
+/*
 const doURI = "mongodb+srv://markdb:rasengan@cluster0.ad3usrv.mongodb.net/?retryWrites=true&w=majority"
 mongoose.connect(doURI, {useNewUrlParser: true, useUnifiedTopology: true}).then((result) => {
   //app.listen(3000);
-}).catch((err) => {
-  console.log('there is an error');
-})
-console.log('something is happening here');
-//*/
+}).catch((err) => {})
+*/
 
 router.get("/", async (req, res, next) => {
   res.sendFile(path.join(__dirname,'../routes/index.html'))
