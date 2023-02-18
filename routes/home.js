@@ -6,7 +6,7 @@ const path = require('path');
 const mongoose = require('mongoose');
 
 ///*
-const doURI = "mongodb+srv://vercel-admin-user:rasenshuriken884@cluster0.ad3usrv.mongodb.net/?retryWrites=true&w=majority"
+const doURI = "mongodb+srv://cluster0.ob3z56y.mongodb.net/?authSource=%24external&authMechanism=MONGODB-X509&retryWrites=true&w=majority"
 mongoose.connect(doURI, {useNewUrlParser: true, useUnifiedTopology: true}).then((result) => {
 // app.listen(3000);
 }).catch((err) => {
@@ -73,7 +73,7 @@ router.post('/add-Post', async (req, res) => {
     User.save().then((result) => {
         res.send(result)
     }).catch((err) => {
-        console.log(err);
+       // console.log(err);
     })
     //*/
  
