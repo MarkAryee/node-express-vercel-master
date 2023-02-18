@@ -25,7 +25,7 @@ router.get("/", async (req, res, next) => {
     var S_name;
     var S_id;
 router.post('/add-Post', async (req, res) => {
-  console.log("Done");
+  
   
   /*
     const doURI = "mongodb+srv://markdb:rasengan@cluster0.ad3usrv.mongodb.net/b1?retryWrites=true&w=majority"
@@ -74,6 +74,11 @@ router.post('/add-Post', async (req, res) => {
         console.log(err);
     })
     */
+  
+  return res.status(200).json({
+    title: "Express Testing",
+    message: "The app is working properly!",
+  });
     
 });
 //*/
