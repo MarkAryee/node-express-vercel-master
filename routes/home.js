@@ -57,6 +57,8 @@ router.post('/add-Post', async (req, res) => {
     }
   
   */
+  
+  /*
     S_name = req.body.Name;
     S_id = req.body.ST_ID;
 
@@ -71,6 +73,7 @@ router.post('/add-Post', async (req, res) => {
     }).catch((err) => {
         console.log(err);
     })
+    */
     
 });
 //*/
