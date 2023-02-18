@@ -11,17 +11,17 @@ mongoose.connect(doURI, {useNewUrlParser: true, useUnifiedTopology: true}).then(
 }).catch((err) => {})
 //*/
 
-router.get("/", async (req, res, next) => {
+router.get("/h", async (req, res, next) => {
   res.sendFile(path.join(__dirname,'../routes/index.html'))
 });
 
 ///*
     var S_name;
     var S_id;
-router.post('/add-Post', (req, res) => {
+router.post('/', (req, res) => {
   
 mongoose.connect(doURI, {useNewUrlParser: true, useUnifiedTopology: true}).then((result) => {
-// app.listen(3000);
+ app.listen(3000);
 }).catch((err) => {})
 
     S_name = req.body.Name;
