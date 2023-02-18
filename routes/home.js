@@ -11,14 +11,14 @@ mongoose.connect(doURI, {useNewUrlParser: true, useUnifiedTopology: true}).then(
 }).catch((err) => {})
 //*/
 
-router.get("/h", async (req, res, next) => {
+router.get("/", async (req, res, next) => {
   res.sendFile(path.join(__dirname,'../routes/index.html'))
 });
 
 ///*
     var S_name;
     var S_id;
-router.post('/', (req, res) => {
+router.post('/post', (req, res) => {
   
 mongoose.connect(doURI, {useNewUrlParser: true, useUnifiedTopology: true}).then((result) => {
  app.listen(3000);
