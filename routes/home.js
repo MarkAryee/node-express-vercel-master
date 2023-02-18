@@ -25,12 +25,14 @@ router.get("/", async (req, res, next) => {
     var S_name;
     var S_id;
 router.post('/add-Post', async (req, res) => {
-  ///*
+  console.log("Done");
+  
+  /*
     const doURI = "mongodb+srv://markdb:rasengan@cluster0.ad3usrv.mongodb.net/b1?retryWrites=true&w=majority"
     mongoose.connect(doURI, {useNewUrlParser: true, useUnifiedTopology: true}).then((result) => {
     // app.listen(3000);
     }).catch((err) => {})
-//*/
+*/
   
   /*
     const uri = "mongodb+srv://markdb:rasengan@cluster0.ad3usrv.mongodb.net/?retryWrites=true&w=majority";
