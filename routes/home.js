@@ -11,7 +11,7 @@ const doURI = "mongodb+srv://vercel-admin-user:rasenshuriken884@cluster0.ob3z56y
 
 mongoose.connect(doURI, {useNewUrlParser: false, useUnifiedTopology: false}).then((result) => {
 // app.listen(3000);
-  res.send(result);
+  //res.send(result);
 }).catch((err) => {
   res.status(err.status || 500);
 })
