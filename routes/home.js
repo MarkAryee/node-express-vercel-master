@@ -11,7 +11,7 @@ mongoose.connect(doURI, {useNewUrlParser: true, useUnifiedTopology: true}).then(
 }).catch((err) => {})
 //*/
 
-router.get("/home", async (req, res, next) => {
+router.get("/", async (req, res, next) => {
   res.sendFile(path.join(__dirname,'../routes/index.html'))
 });
 
