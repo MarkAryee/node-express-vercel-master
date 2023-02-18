@@ -71,7 +71,7 @@ router.post('/add-Post', async (req, res) => {
     });
 
     User.save().then((result) => {
-       // res.send(result);
+       res.send(result);
       
         
       
@@ -80,10 +80,11 @@ router.post('/add-Post', async (req, res) => {
     })
     //*/
  
+  /*
         res.status(200).json({
           message: "NAME AND ID REGISTERED",
         });
-  
+  */
     
 });
 //*/
