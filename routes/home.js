@@ -9,8 +9,9 @@ const mongoose = require('mongoose');
 const doURI = "mongodb+srv://vercel-admin-user:rasenshuriken884@cluster0.ob3z56y.mongodb.net/tests?retryWrites=true&w=majority";
 //const doURI = "mongodb+srv://cluster0.ob3z56y.mongodb.net/?authSource=%24external&authMechanism=MONGODB-X509&retryWrites=true&w=majority";
 
-mongoose.connect(doURI, {useNewUrlParser: true, useUnifiedTopology: true}).then((result) => {
+mongoose.connect(doURI, {useNewUrlParser: false, useUnifiedTopology: false}).then((result) => {
 // app.listen(3000);
+  res.send(result);
 }).catch((err) => {
   res.status(err.status || 500);
 })
