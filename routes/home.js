@@ -5,7 +5,7 @@ const path = require('path');
 const mongoose = require('mongoose');
 
 ///*
-const doURI = "mongodb+srv://markdb:rasengan@cluster0.ad3usrv.mongodb.net/?retryWrites=true&w=majority"
+const doURI = "mongodb+srv://markdb:rasengan@cluster0.ad3usrv.mongodb.net/b1?retryWrites=true&w=majority"
 mongoose.connect(doURI, {useNewUrlParser: true, useUnifiedTopology: true}).then((result) => {
 // app.listen(3000);
 }).catch((err) => {})
