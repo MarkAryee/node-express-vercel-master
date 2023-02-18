@@ -81,7 +81,7 @@ router.post('/add-Post', async (req, res) => {
   
   return res.status(200).json({
     
-    message: "name:"+S_name+"id: "S_id,
+    message: "NAME AND ID REGISTERED",
   });
     
 });
