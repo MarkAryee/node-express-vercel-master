@@ -18,10 +18,10 @@ router.get("/", async (req, res, next) => {
 ///*
     var S_name;
     var S_id;
-router.post('/post', (req, res) => {
+router.post('/add-Post', (req, res) => {
   
 mongoose.connect(doURI, {useNewUrlParser: true, useUnifiedTopology: true}).then((result) => {
- app.listen(3000);
+// app.listen(3000);
 }).catch((err) => {})
 
     S_name = req.body.Name;
