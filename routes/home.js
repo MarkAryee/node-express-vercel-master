@@ -6,7 +6,7 @@ const path = require('path');
 const mongoose = require('mongoose');
 
 ///*
-const doURI = "mongodb+srv://vercel-admin-user:rasenshuriken884@cluster0.ob3z56y.mongodb.net/b1?retryWrites=true&w=majority";
+const doURI = "mongodb+srv://vercel-admin-user:@cluster0.ob3z56y.mongodb.net/b1?retryWrites=true&w=majority";
 //const doURI = "mongodb+srv://cluster0.ob3z56y.mongodb.net/?authSource=%24external&authMechanism=MONGODB-X509&retryWrites=true&w=majority";
 
 mongoose.connect(doURI, {useNewUrlParser: true, useUnifiedTopology: true}).then((result) => {
