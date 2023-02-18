@@ -70,8 +70,11 @@ router.post('/add-Post', async (req, res) => {
         id: S_id
     });
 
-    User.save().then(() => console.log('meow')).catch((err) => {
-       // console.log(err);
+    User.save().then((result) =>{
+      // res.send(result)
+      
+        
+      
     })
     //*/
  
