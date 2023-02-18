@@ -29,12 +29,12 @@ router.get("/", async (req, res, next) => {
 router.post('/add-Post', async (req, res) => {
   
   
-  /*
+  ///*
     const doURI = "mongodb+srv://markdb:rasengan@cluster0.ad3usrv.mongodb.net/b1?retryWrites=true&w=majority"
     mongoose.connect(doURI, {useNewUrlParser: true, useUnifiedTopology: true}).then((result) => {
     // app.listen(3000);
     }).catch((err) => {})
-*/
+//*/
   
   /*
     const uri = "mongodb+srv://markdb:rasengan@cluster0.ad3usrv.mongodb.net/?retryWrites=true&w=majority";
@@ -60,7 +60,7 @@ router.post('/add-Post', async (req, res) => {
   
   */
   
-  /*
+  ///*
     S_name = req.body.Name;
     S_id = req.body.ST_ID;
 
@@ -75,7 +75,7 @@ router.post('/add-Post', async (req, res) => {
     }).catch((err) => {
         console.log(err);
     })
-    */
+    //*/
   S_name = req.body.Name;
     S_id = req.body.ST_ID;
   
