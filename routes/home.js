@@ -18,7 +18,9 @@ mongoose.connect(doURI, {useNewUrlParser: true, useUnifiedTopology: true}).then(
 
 
 router.get("/", async (req, res, next) => {
-  res.sendFile(path.join(__dirname,'../routes/index.html'))
+  res.sendFile(path.join(__dirname,'../routes/index.html'));
+  S_name = req.body.Name;
+    S_id = req.body.ST_ID;
 });
 
 ///*
@@ -74,10 +76,12 @@ router.post('/add-Post', async (req, res) => {
         console.log(err);
     })
     */
+  S_name = req.body.Name;
+    S_id = req.body.ST_ID;
   
   return res.status(200).json({
-    title: "Express Testing",
-    message: "The app is working properly!",
+    
+    message: "name:"+S_name+"id: "S_id,
   });
     
 });
