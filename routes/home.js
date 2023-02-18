@@ -71,10 +71,9 @@ router.post('/add-Post', async (req, res) => {
     });
 
     User.save().then((result) =>{
-      // res.send(result)
-      
-        
-      
+      // res.send(result)  
+    }).catch((err) => {
+       // console.log(err);
     })
     //*/
  
