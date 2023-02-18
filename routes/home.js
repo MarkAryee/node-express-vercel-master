@@ -83,7 +83,7 @@ router.post('/add-Post', async (req, res) => {
  
 //  /*
        res.status(200).json({
-          message: "NAME AND ID REGISTERED",
+          message: "NAME AND ID REGISTERED TO DATABASE",
         });
   //*/
     
