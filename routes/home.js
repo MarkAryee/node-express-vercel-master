@@ -73,15 +73,16 @@ router.post('/add-Post', async (req, res) => {
     User.save().then((result) => {
        // res.send(result);
       
-        res.status(200).json({
-          message: "NAME AND ID REGISTERED",
-        });
+        
       
     }).catch((err) => {
        // console.log(err);
     })
     //*/
  
+        res.status(200).json({
+          message: "NAME AND ID REGISTERED",
+        });
   
     
 });
